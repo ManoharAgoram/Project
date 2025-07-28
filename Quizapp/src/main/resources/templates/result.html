@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Quiz Result</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		.score {
+			font-size: 2em;
+			color: green;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Quiz Result</h1>
+
+	<p>Your Score:</p>
+	<p class="score" th:text="${score}"></p>
+
+	<a href="/quiz/1">Try Again</a>
+
+</body>
+
+</html>
